@@ -13,6 +13,7 @@ jobs:
         run: free -m
   install-jf:
     runs-on: ubuntu-latest
+    steps:
       - name: install jf
         uses: jfrog/setup-jfrog-cli@v4
 # + Authentication method
