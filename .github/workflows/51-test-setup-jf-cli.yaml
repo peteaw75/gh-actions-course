@@ -9,3 +9,5 @@ jobs:
     steps:
       - name: release version
         run: uname -a
+      - name: amount of memory
+        run: free -m
