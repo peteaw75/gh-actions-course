@@ -1,7 +1,7 @@
 #Test setup-jf-cli-install
 name: 51-test-setup-jf-cli
 
-on: push
+on: workflow_dispatch #on
 
 jobs:
   echo-release-version:
@@ -17,6 +17,6 @@ jobs:
       - name: install jf
         uses: jfrog/setup-jfrog-cli@v4
 # + Authentication method
-      - name: chec jf version
+      - name: check jf version
         run: jf --version
             
