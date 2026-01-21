@@ -1,0 +1,11 @@
+#Test setup-jf-cli-install
+name: 51-test-setup-jf-cli
+
+on: push
+
+jobs:
+  echo-release-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: release version
+        run: uname -a
