@@ -11,3 +11,11 @@ jobs:
         run: uname -a
       - name: amount of memory
         run: free -m
+  install-jf:
+    runs-on: ubuntu-latest
+      - name: install jf
+        uses: jfrog/setup-jfrog-cli@v4
+# + Authentication method
+      - name: chec jf version
+        run: jf --version
+            
